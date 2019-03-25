@@ -1,0 +1,11 @@
+{
+  "name": "html_css1",
+  "version": "1.0.0",
+  "description": "My first project from ict academy in simple html and css with anish sir",
+  "main": "index.js",
+  "scripts": {
+    "test": "hiiiiiiii"
+  },
+  "author": "SMH JIFRI",
+  "license": "BSD-2-Clause"
+}
