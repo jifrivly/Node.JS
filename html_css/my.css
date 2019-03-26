@@ -1,0 +1,15 @@
+table {
+  border: 2px solid black;
+}
+.login_btn {
+  background: greenyellow;
+}
+
+.register_btn {
+  background: red;
+}
+
+.register_table {
+  background: #0099ff;
+  border: 3px solid black;
+}
