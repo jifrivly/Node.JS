@@ -1,15 +1,21 @@
-table {
-  border: 2px solid black;
+/* tables */
+
+.login_table {
+  border: 3px solid black;
+  background: slateblue;
 }
+.register_table {
+  border: 3px solid black;
+  background: #0099ff;
+}
+
+
+/* buttons */
+
 .login_btn {
   background: greenyellow;
 }
 
 .register_btn {
   background: red;
-}
-
-.register_table {
-  background: #0099ff;
-  border: 3px solid black;
 }
