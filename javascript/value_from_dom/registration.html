@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="form.js"></script>
+</head>
+
+<body>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link " href="index"> Login </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="registration">Create Account</a>
+        </li>
+
+    </ul>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-2 col-md-3"></div>
+            <div class="col col-12 col-sm-8 col-md-6 ">
+                <h2> Registration </h2>
+                <form action="">
+
+                    <div class="form-group">
+                        <label for="firstname">Firstname : </label>
+                        <input type="text" name="firstname" id="firstname" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter firstname </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">Lastname : </label>
+                        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter lastname </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age"> Age : </label>
+                        <input type="text" name="age" id="age" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob"> Date of birth : </label>
+                        <input type="text" name="dob" id="dob" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"> Email ID : </label>
+                        <input type="text" name="email" id="email" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="address">Address : </label>
+                      <textarea class="form-control" name="address" id="address" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pincode"> Pincode : </label>
+                        <input type="number" name="pincode" id="pincode" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="district">District : </label>
+                      <select class="form-control" name="district" id="district">
+                            <option value="Alappuzha">Alappuzha</option>
+                            <option value="Ernakulam">Ernakulam</option>
+                            <option value="Idukki">Idukki</option>
+                            <option value="Kannur">Kannur</option>
+                            <option value="Kasaragod">Kasaragod</option>
+                            <option value="Kollam">Kollam</option>
+                            <option value="Kottayam">Kottayam</option>
+                            <option value="Kozhikode">Kozhikode</option>
+                            <option value="Malappuram">Malappuram</option>
+                            <option value="Palakkad">Palakkad</option>
+                            <option value="Pathanamthitta">Pathanamthitta</option>
+                            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                            <option value="Thrissur">Thrissur</option>
+                            <option value="Wayanad">Wayanad</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="place"> Place : </label>
+                        <input type="text" name="place" id="place" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qualification"> Qualification : </label>
+                        <input type="text" name="qualification" id="qualification" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guardian"> Guadian name : </label>
+                        <input type="text" name="guardian" id="guardian" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile"> Mobile number : </label>
+                        <input type="number" name="mobile" id="mobile" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="gender"> Gender : </label> <br>
+                        <input type="radio" name="gender" id="" selected>Male <br />
+                        <input type="radio" name="gender" id="" >Female <br />
+                        <input type="radio" name="gender" id="" >Not known <br />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="religion"> Religion : </label>
+                        <input type="text" name="religion" id="religion" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="blood_group"> Blood group : </label>
+                        <select name="blood_group" id="blood_group">
+                            <option value="A+"> A+ </option>
+                            <option value="A-"> A- </option>
+                            <option value="B+"> B+ </option>
+                            <option value=" B-"> B- </option>
+                            <option value="AB+"> AB+ </option>
+                            <option value="AB-"> AB- </option>
+                            <option value="O+"> O+ </option>
+                            <option value="O-"> O- </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username"> Username : </label>
+                        <input type="text" name="username" id="username" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password"> Password : </label>
+                        <input type="text" name="password" id="password" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_password"> Confirm password : </label>
+                        <input type="text" name="confirm_password" id="confirm_password" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Enter </small>
+                    </div>
+
+                    <div class="text-right">
+                            <button type="button" onclick="get_data();" class="btn btn-primary">Register</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

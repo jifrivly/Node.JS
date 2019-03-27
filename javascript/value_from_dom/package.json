@@ -1,0 +1,11 @@
+{
+  "name": "form_validation1",
+  "version": "1.0.0",
+  "description": "form validation project 1",
+  "main": "form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jifrivly",
+  "license": "BSD-2-Clause"
+}
