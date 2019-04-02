@@ -28,15 +28,15 @@ function validate() {
   var password = document.getElementById("password").value;
 
   if (username == "" || username == " ") {
-    document.getElementById("usernamehelpid").innerText =
-      "username will be not null".classlist.add("text-danger")
-      document.getElementById("usernamehelpid").classlist.add("text-danger")
+    a = document.getElementById("usernamehelpid")
+    a.innerText ="username will be not null"
+    a.classList.add("text-danger")
 
   } else {
   }
   if (password == "" || password == " ") {
     document.getElementById("passwordhelpid").innerText =
-      "password will be not null".classlist.add("text-danger")
+      "password will be not null".classList.add("text-danger")
   } else {
   }
 }
