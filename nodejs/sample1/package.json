@@ -1,0 +1,14 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "node js 1st sample",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jifrivly",
+  "license": "",
+  "dependencies": {
+    "lodash": "~4.17.11"
+  }
+}
