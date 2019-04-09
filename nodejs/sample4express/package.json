@@ -1,0 +1,14 @@
+{
+  "name": "sample4express",
+  "version": "1.0.0",
+  "description": "express sample project with using templates like handlebars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jifrivly",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.16.4"
+  }
+}
