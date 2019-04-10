@@ -39,20 +39,20 @@ myapp.post('/getdata',(req,res)=>{
     res.render("about",{name:name,address:address,place:place,phone:phone,email:email,message:message})
 })
 
-myapp.get("/login",(req,res)=>{
-    var user = req.body.username
-    var pass = req.body.password
-    console.log(req.body.username)
-    console.log(req.body.password)
-    res.send("Hii")
+// myapp.get("/login",(req,res)=>{
+//     var user = req.body.username
+//     var pass = req.body.password
+//     console.log(user)
+//     console.log(pass)
+//     res.send("Hii")
 
-    // if (user == "admin" && pass == "1234") {
-    //     res.send(req.body.username + req.body.password + "Success")
-    // } else {
-    //     res.send(req.body.username + req.body.password + "Failed")
-    // }
-})
+//     // if (user == "admin" && pass == "1234") {
+//     //     res.send(req.body.username + req.body.password + "Success")
+//     // } else {
+//     //     res.send(req.body.username + req.body.password + "Failed")
+//     // }
+// })
 
-myapp.listen(4545,()=>{
+myapp.listen(6767,()=>{
     console.log("Web App running successfully")
 })
