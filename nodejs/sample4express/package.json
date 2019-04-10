@@ -9,6 +9,7 @@
   "author": "jifrivly",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "express": "~4.16.4"
+    "express": "~4.16.4",
+    "express-handlebars": "~3.0.2"
   }
 }

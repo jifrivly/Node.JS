@@ -35,12 +35,24 @@ myapp.post('/getdata',(req,res)=>{
     var phone = req.body.phone
     var email = req.body.email
     var message = req.body.message
-    res.send("Name : " + name +
-             "<br>Address : " + address + 
-             "<br>Place : " + place + 
-             "<br>Phone : " + phone + 
-             "<br>Email : " + email + 
-             "<br>Message : " + message)
+
+    res.render("about",{name:name,address:address,place:place,phone:phone,email:email,message:message})
 })
 
-myapp.listen(4545)
+myapp.get("/login",(req,res)=>{
+    var user = req.body.username
+    var pass = req.body.password
+    console.log(req.body.username)
+    console.log(req.body.password)
+    res.send("Hii")
+
+    // if (user == "admin" && pass == "1234") {
+    //     res.send(req.body.username + req.body.password + "Success")
+    // } else {
+    //     res.send(req.body.username + req.body.password + "Failed")
+    // }
+})
+
+myapp.listen(4545,()=>{
+    console.log("Web App running successfully")
+})
