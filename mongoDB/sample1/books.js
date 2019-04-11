@@ -2,7 +2,7 @@ const express = require("express")
 
 const booksRouter = express.Router()
 
-booksRouter.route("/").get((req,res)=>{
+booksRouter.get("/",(req,res)=>{
     res.render("books",{
         title:"Books",
         nav:[
@@ -16,4 +16,4 @@ booksRouter.route("/single").get((req,res)=>{
     res.send("Hello Single Books")
 })
 
-module.exports = booksRouters
+module.exports = booksRouter

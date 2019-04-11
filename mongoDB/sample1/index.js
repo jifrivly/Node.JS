@@ -1,31 +1,30 @@
 const express = require("express")
 const chalk = require("chalk")
 const path = require("path")
+const ejsLayout = require("express-ejs-layouts")
 
 var authorRouter = require("./authors")
 var booksRouter = require("./books")
 
 var my_app = express()
 
-
 my_app.set('views', "./src/views")
 my_app.set("view engine", "ejs")
-my_app.use(express.static(path.join(__dirname,"public")))
+
+my_app.use(express.static(path.join(__dirname, "public")))
+my_app.use(ejsLayout)
+my_app.use("/books", booksRouter)
+my_app.use("/authors", authorRouter)
 
 my_app.get("/", (req, res) => {
-    res.render("index",{
-        title:"Library",
-        nav:[
-            {link:"/books",title:"Books"},
-            {link:"/authors",title:"Authors"}
+    res.render("index", {
+        title: "Library",
+        nav: [
+            { link: "/books", title: "Books" },
+            { link: "/authors", title: "Authors" }
         ]
     })
 })
-
-
-my_app.use("/books",booksRouter)
-
-my_app.use("/authors",authorRouter)
 
 
 
