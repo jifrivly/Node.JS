@@ -1,5 +1,6 @@
 const express = require("express")
 const bodyParser = require("body-parser")
+const addBookData = require("./src/model/bookdata")
 
 const adminRouter = express.Router()
 
@@ -18,11 +19,15 @@ function admin(nav) {
         })
     })
     adminRouter.post("/addbook", (req, res) => {
-        var b_name = req.body.name
-        var b_genre = req.body.genre
-        var b_author = req.body.authorname
+        var item = {
+            title: req.body.name,
+            author: req.body.genre,
+            genre: req.body.authorname
+        }
+        var book = new addBookData(item)
+        book.save()
 
-        res.send(b_name + b_genre + b_author)
+        res.send(item)
     })
     return adminRouter
 }
