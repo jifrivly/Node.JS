@@ -1,0 +1,44 @@
+{
+	"_id" : ObjectId("5caedb226ed678ea715091e4"),
+	"first_name" : "Jhone",
+	"last_name" : "Doe",
+	"gender" : "Male"
+}
+{
+	"_id" : ObjectId("5caedbb66ed678ea715091e5"),
+	"first_name" : "Jifri",
+	"last_name" : "smh"
+}
+{
+	"_id" : ObjectId("5caedc096ed678ea715091e6"),
+	"first_name" : "Junaid",
+	"last_name" : "kp",
+	"gender" : "Male"
+}
+{
+	"_id" : ObjectId("5caede56e1110e158f0439a6"),
+	"first_name" : "Junaid",
+	"last_name" : "kp"
+}
+{
+	"_id" : ObjectId("5caedf2de1110e158f0439a7"),
+	"first_name" : "Riyas",
+	"last_name" : "kp"
+}
+{
+	"_id" : ObjectId("5caedf2de1110e158f0439a8"),
+	"first_name" : "Sajad",
+	"last_name" : "Ashraf",
+	"gender" : "Male"
+}
+{
+	"_id" : ObjectId("5caedf2de1110e158f0439a9"),
+	"first_name" : "Asil",
+	"last_name" : "Ashraf",
+	"Age" : 26
+}
+{
+	"_id" : ObjectId("5caee401e20acd2ad434c622"),
+	"first_name" : "Anish",
+	"last_name" : "Nair"
+}

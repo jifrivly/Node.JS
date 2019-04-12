@@ -1,15 +1,15 @@
 const express = require("express")
 
-const authorRouter = express.Router()
+const authors = express.Router()
 
-authorRouter.get("/", (req, res) => {
-    res.render("authors", {
-        title: "Authors",
-        nav: [
-            { link: "/books", title: "Books" },
-            { link: "/authors", title: "Authors" }
-        ]
+function authorsRouter(nav) {
+    authors.get("/", (req, res) => {
+        res.render("authors", {
+            title: "Authors",
+            nav
+        })
     })
-})
-
-module.exports = authorRouter
+    return authors
+}
+module.exports = authorsRouter
+// module.exports = authors
