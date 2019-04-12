@@ -1,0 +1,16 @@
+mongo
+mongo
+use Kerala
+
+db.CampKerala.insertMany([
+    {dist_name:"Thrissur",camp_name:"UPS Azhikode",village_name:"Azheekode",camp_in_charge:"Kishore",total_inmates:"110"},
+    {dist_name:"Thrissur",camp_name:"Labour School",village_name:"Pullut",camp_in_charge:"Syam",total_inmates:"367"},
+    {dist_name: camp_name: village_name: camp_in_charge: total_inmates:},
+    {dist_name: camp_name: village_name: camp_in_charge: total_inmates:},
+    {dist_name: camp_name: village_name: camp_in_charge: total_inmates:},
+    {dist_name: camp_name: village_name: camp_in_charge: total_inmates:},
+    {},
+    ])
+
+
+Thrissur  Vidhyartha Dayani  Methala  John  1550  
