@@ -1,0 +1,46 @@
+<div class="jumbotron">
+  <h1 class="display-3">Welcome to {{ title }}</h1>
+  <p class="lead"> My name is {{ name }} </p>
+  <hr class="my-2">
+  <p>More info</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="" role="button">Jumbo action name</a>
+  </p>
+</div>
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="name">Enter name here : </label>
+      <input type="text" [(ngModel)]="name" class="form-control" name="name" id="name" aria-describedby="helpId"
+        placeholder="">
+      <small id="helpId" class="form-text text-muted">Help text</small>
+    </div>
+  </form>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Product Code</th>
+        <th>Release Date</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Star Rating</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of products">
+        <td>{{ i.productId }}</td>
+        <td>{{ i.productName }}</td>
+        <td>{{ i.productCode }}</td>
+        <td>{{ i.releaseDate }}</td>
+        <td>{{ i.description }}</td>
+        <td>{{ i.price }}</td>
+        <td>{{ i.starRating }}</td>
+        <td><img src="" class="img-thumbnail rounded-circle" alt="Product Image"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

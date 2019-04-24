@@ -1,0 +1,8 @@
+<hr>
+<div class="py-3">
+  <div *ngIf="true else block2">Value is true</div>
+  <ng-template #block2>Value is false</ng-template>
+
+  {{value}}
+  <input [(ngModel)]="value" type="" name="" value="">
+</div>
