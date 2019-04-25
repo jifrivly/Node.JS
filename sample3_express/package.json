@@ -1,0 +1,15 @@
+{
+  "name": "sample3",
+  "version": "1.0.0",
+  "description": "this is an homework in nodejs and express for 4-8-2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jifrivly",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "lodash": "^4.17.11"
+  }
+}
