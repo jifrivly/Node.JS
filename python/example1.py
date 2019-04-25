@@ -1,5 +1,0 @@
-print("Jhony Jhony")
-print("Yes PAPA")
-print("Eating sugar")
-# print("Yes PAPA")
-print("No, PAPA")
