@@ -1,28 +1,27 @@
 const express = require('express');
 const ProductData = require('./src/model/Productdata');
 const cors = require('cors');
-var bodyparser = require('body-parser');
+var bodyParser = require('body-parser');
 var app = new express();
 app.use(cors());
-app.use(bodyparser.json())
+app.use(bodyParser.json())
 
 app.post('/insert', function (req, res) {
     res.header("Access-Control-Allow-Origin", "*")
     res.header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
     console.log(req.body);
-    console.log("sreeraj");
-    var product = {
-        productId: req.body.name.productId,
-        productName: req.body.name.productName,
-        productCode: req.body.name.productCode,
-        releaseDate: req.body.name.releaseDate,
-        description: req.body.name.description,
-        price: req.body.name.price,
-        starRating: req.body.name.starRating,
-        imageUrl: req.body.name.imageUrl,
+    var products = {
+        productId: req.body.product.productId,
+        productName: req.body.product.productName,
+        productCode: req.body.product.productCode,
+        releaseDate: req.body.product.releaseDate,
+        description: req.body.product.description,
+        price: req.body.product.price,
+        starRating: req.body.product.starRating,
+        imageUrl: req.body.product.imageUrl,
     }
-    var product = new ProductData(product);
-    product.save();
+    var products = new ProductData(products);
+    products.save();
 });
 app.get('/products', function (req, res) {
     res.header("Access-Control-Allow-Origin", "*")
